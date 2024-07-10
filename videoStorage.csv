@@ -1,0 +1,131 @@
+Number,Title,Director,Rating,Plays
+1,Tom and Jerry,Fred Quimby,6,0
+2,The Lion King,Roger Allers,8,0
+3,Avatar,James Cameron,7.5,0
+4,Inception,Christopher Nolan,9,0
+5,Frozen,Chris Buck,7,0
+6,Pulp Fiction,Quentin Tarantino,8.5,0
+7,Toy Story,John Lasseter,7.5,0
+8,The Godfather,Francis Ford Coppola,9,0
+9,Jurassic Park,Steven Spielberg,7,0
+10,Finding Nemo,Andrew Stanton,8,0
+11,The Matrix,Lana Wachowski,8,0
+12,Forrest Gump,Robert Zemeckis,7.5,0
+13,Interstellar,Christopher Nolan,9,0
+14,Shrek,Andrew Adamson,7,0
+15,Titanic,James Cameron,8.5,0
+16,The Shawshank Redemption,Frank Darabont,9,0
+17,Spider-Man: Into the Spider-Verse,Peter Ramsey,7.5,0
+18,The Dark Knight,Christopher Nolan,9,0
+19,The Lord of the Rings: The Fellowship of the Ring,Peter Jackson,8,0
+20,Goodfellas,Martin Scorsese,7,0
+21,The Usual Suspects,Bryan Singer,8,0
+22,Se7en,David Fincher,8,0
+23,Life Is Beautiful,Roberto Benigni,8,0
+24,City of God,Fernando Meirelles,7,0
+25,Saving Private Ryan,Steven Spielberg,8.5,0
+26,Spirited Away,Hayao Miyazaki,8,0
+27,The Green Mile,Frank Darabont,8,0
+28,Parasite,Bong Joon Ho,9,0
+29,Leon: The Professional,Luc Besson,7.5,0
+30,The Silence of the Lambs,Jonathan Demme,8,0
+31,The Pianist,Roman Polanski,8,0
+32,Gladiator,Ridley Scott,7,0
+33,The Departed,Martin Scorsese,8.5,0
+34,The Intouchables,Olivier Nakache,7.5,0
+35,Whiplash,Damien Chazelle,8,0
+36,The Prestige,Christopher Nolan,9,0
+37,The Lives of Others,Florian Henckel von Donnersmarck,7,0
+38,The Hunt,Thomas Vinterberg,8,0
+39,Amelie,Jean-Pierre Jeunet,7.5,0
+40,Back to the Future,Robert Zemeckis,8,0
+41,The Terminator,James Cameron,7.5,0
+42,Django Unchained,Quentin Tarantino,8.5,0
+43,WALL E,Andrew Stanton,8,0
+44,Princess Mononoke,Hayao Miyazaki,7,0
+45,Oldboy,Chan-wook Park,8,0
+46,A Clockwork Orange,Stanley Kubrick,7.5,0
+47,American History X,Tony Kaye,8,0
+48,The Shining,Stanley Kubrick,8.5,0
+49,The Great Dictator,Charles Chaplin,7,0
+50,Die Hard,John McTiernan,8,0
+51,Inglourious Basterds,Quentin Tarantino,8.5,0
+52,The Lion King,Jon Favreau,7,0
+53,Joker,Todd Phillips,8.5,0
+54,The Avengers,Joss Whedon,8,0
+55,The Dark Knight Rises,Christopher Nolan,8,0
+56,Mad Max: Fury Road,George Miller,8.5,0
+57,La La Land,Damien Chazelle,8,0
+58,Avengers: Endgame,Anthony Russo,9,0
+59,The Wolf of Wall Street,Martin Scorsese,8.5,0
+60,The Grand Budapest Hotel,Wes Anderson,8,0
+61,Moonlight,Barry Jenkins,8,0
+62,Drive,Nicolas Winding Refn,7.5,0
+63,The Revenant,Alejandro González Iñárritu,8,0
+64,Birdman,Alejandro González Iñárritu,7.5,0
+65,La La Land,Damien Chazelle,8,0
+66,The Social Network,David Fincher,8,0
+67,Gone Girl,David Fincher,8,0
+68,Her,Spike Jonze,8,0
+69,Gravity,Alfonso Cuarón,7.5,0
+70,The Martian,Ridley Scott,8,0
+71,1917,Sam Mendes,8,0
+72,The Shape of Water,Guillermo del Toro,7.5,0
+73,Midnight in Paris,Woody Allen,7,0
+74,The Irishman,Martin Scorsese,8.5,0
+75,Once Upon a Time in Hollywood,Quentin Tarantino,8,0
+76,Blade Runner 2049,Denis Villeneuve,8,0
+77,Arrival,Denis Villeneuve,8,0
+78,Ex Machina,Alex Garland,7.5,0
+79,Mad Max: Fury Road,George Miller,8.5,0
+80,The Hateful Eight,Quentin Tarantino,8,0
+81,The Big Short,Adam McKay,7.5,0
+82,Hacksaw Ridge,Mel Gibson,8,0
+83,Fury,David Ayer,7.5,0
+84,The Theory of Everything,James Marsh,7.5,0
+85,A Beautiful Mind,Ron Howard,8,0
+86,The Imitation Game,Morten Tyldum,8,0
+87,Spotlight,Tom McCarthy,8,0
+88,Dunkirk,Christopher Nolan,8.5,0
+89,The King's Speech,Tom Hooper,8,0
+90,No Country for Old Men,Joel Coen,8,0
+91,There Will Be Blood,Paul Thomas Anderson,8,0
+92,Into the Wild,Sean Penn,7.5,0
+93,Mystic River,Clint Eastwood,8,0
+94,The Departed,Martin Scorsese,8.5,0
+95,Catch Me If You Can,Steven Spielberg,8,0
+96,The Aviator,Martin Scorsese,7.5,0
+97,The Curious Case of Benjamin Button,David Fincher,7,0
+98,Black Swan,Darren Aronofsky,8,0
+99,Fight Club,David Fincher,8.5,0
+100,The Sixth Sense,M. Night Shyamalan,8,0
+101,The Truman Show,Peter Weir,8,0
+102,Eternal Sunshine of the Spotless Mind,Michel Gondry,8,0
+103,Good Will Hunting,Gus Van Sant,8,0
+104,American Beauty,Sam Mendes,8,0
+105,The Usual Suspects,Bryan Singer,8,0
+106,Heat,Michael Mann,8,0
+107,The Prestige,Christopher Nolan,9,0
+108,City of God,Fernando Meirelles,8,0
+109,The Green Mile,Frank Darabont,8,0
+110,Se7en,David Fincher,8,0
+111,Life Is Beautiful,Roberto Benigni,8,0
+112,American History X,Tony Kaye,8,0
+113,The Shining,Stanley Kubrick,8.5,0
+114,A Clockwork Orange,Stanley Kubrick,7.5,0
+115,Princess Mononoke,Hayao Miyazaki,7,0
+116,Oldboy,Chan-wook Park,8,0
+117,The Great Dictator,Charles Chaplin,7,0
+118,Die Hard,John McTiernan,8,0
+119,Inglourious Basterds,Quentin Tarantino,8.5,0
+120,The Lion King,Jon Favreau,7,0
+121,Joker,Todd Phillips,8.5,0
+122,The Avengers,Joss Whedon,8,0
+123,The Dark Knight Rises,Christopher Nolan,8,0
+124,Mad Max: Fury Road,George Miller,8.5,0
+125,La La Land,Damien Chazelle,8,0
+126,Avengers: Endgame,Anthony Russo,9,0
+127,The Wolf of Wall Street,Martin Scorsese,8.5,0
+128,The Grand Budapest Hotel,Wes Anderson,8,0
+129,Moonlight,Barry Jenkins,8,0
+130,Drive,Nicolas Winding Refn,7.5,0
