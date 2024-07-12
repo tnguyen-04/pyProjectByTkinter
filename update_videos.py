@@ -26,7 +26,6 @@ def clickedListAllVideos():
 def updateNewRating():
     input_number =ent_enterNumber.get().strip()
     new_Rating = ent_enterRating.get().strip()
-    ent_enterNumber.delete(0, tk.END)
     box_updateVideos.config(state="normal")
     
     if input_number.isdigit() and int(input_number) > 0 and new_Rating.isdigit() and float(new_Rating)>0 and float(new_Rating)<10:
@@ -38,6 +37,7 @@ def updateNewRating():
         
         if  getTitle is not None and getDirector is not None and getPlays is not None and newRating is not None:
             box_updateVideos.insert(tk.END, f"Title: {getTitle}\nDirector: {getDirector}\nRating: {newRating}\nPlays: {getPlays}")
+            clickedListAllVideos()    
         else:
             messagebox.showerror("Error", "Video not found")
     else:

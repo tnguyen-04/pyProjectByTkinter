@@ -22,7 +22,7 @@ def clickedListAllVideos():
 
 def checkVideos():
     input_number = ent_enterNumber.get()
-    ent_enterNumber.delete(0, tk.END)
+    
     box_checkVideos.config(state="normal")
     box_checkVideos.delete("1.0", tk.END)
     
@@ -35,10 +35,7 @@ def checkVideos():
         getPlays = get_play_count(number)
         
         if getTitle is not None and getDirector is not None and getRating is not None and getPlays is not None:
-            box_checkVideos.insert(tk.END, f"Title: {getTitle}\n")
-            box_checkVideos.insert(tk.END, f"Director: {getDirector}\n")
-            box_checkVideos.insert(tk.END, f"Rating: {getRating}\n")
-            box_checkVideos.insert(tk.END, f"Plays: {getPlays}\n")
+            box_checkVideos.insert(tk.END, f"Title: {getTitle}\nDirector: {getDirector}\nRating: {getRating}\nPlays: {getPlays}\n")
         else:
             messagebox.showerror("Error", "Video not found")
     

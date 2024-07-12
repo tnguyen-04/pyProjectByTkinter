@@ -1,36 +1,20 @@
-import tkinter as tk
-from tkinter import ttk
+import pytest 
+from check_videos import *
+from create_video_list import *
+from filter_videos import *
+from update_videos import *
+from video_library import *
 
-# Hàm lấy danh sách tên đạo diễn (giả định)
-def getDirectorName():
-    return ["Director 1", "Director 2", "Director 3"]
-
-# Tạo cửa sổ chính
-window = tk.Tk()
-window.title("ComboBox Example")
-
-# Hàm callback khi chọn đạo diễn
-def on_director_select(event):
-    selected_director = cbb_directorName.get()
-    print(f"Selected director: {selected_director}")
-
-# Lấy danh sách tên đạo diễn
-directorNameList = getDirectorName()
-
-# Tạo style cho ComboBox
-style = ttk.Style()
-style.theme_use('clam')  # Chọn theme phù hợp, ví dụ 'clam'
-
-# Thiết lập thuộc tính font cho ComboBox (nhỏ hơn và mờ đi)
-style.configure('Small.TCombobox', font=('Arial', 10), foreground='gray')
-
-# Tạo ComboBox
-cbb_directorName = ttk.Combobox(window, values=directorNameList, width=15, style='Small.TCombobox')
-cbb_directorName.grid(row=0, column=1, pady=(10, 0))
-cbb_directorName.set("Select a director")  # Thiết lập giá trị mặc định
-
-# Liên kết sự kiện chọn với hàm callback
-cbb_directorName.bind("<<ComboboxSelected>>", on_director_select)
-
-# Hiển thị cửa sổ
-window.mainloop()
+# testing get title
+def test_get_name():
+    assert get_name(1) == "Tom and Jerry" #best
+    assert get_name(70) == "The Martian" #average
+    assert get_name(131) == None #worst
+    
+# testing get director
+def test_get_director():
+    assert get_director(1) == "Fred Quimby" #best
+    assert get_director(70) == "Ridley Scott"#average
+    assert get_director(131) == None #worst
+    
+    

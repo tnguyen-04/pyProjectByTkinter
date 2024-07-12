@@ -5,7 +5,7 @@ from subprocess import call
 from video_library import *
 
 window = tk.Tk()
-Setup(window,"Create Video List",735, 400)
+Setup(window,"Create Video List",735, 460)
 
 def clickedListAllVideos():
     
@@ -22,14 +22,15 @@ def clickedListAllVideos():
     lbl_listAllVideo.config(text="List Videos button was clicked")
     
 videoInPlayList = []
+
 def addToPlayList():
     input_number = ent_enterNumber.get().strip()
-    ent_enterNumber.delete(0, tk.END)
     box_addPlaylist.config(state="normal")
+    ent_enterNumber.delete(0, tk.END) 
     
     if input_number.isdigit() and int(input_number) > 0:
         number = int(input_number)
-        videoInPlayList.append(int(number))
+        videoInPlayList.append(number)
         getPLays = get_play_count(number)
         getTitle = get_name(number)
         
@@ -58,16 +59,39 @@ def playTheList():
     box_addPlaylist.config(state="disabled")
 
 def resetPLaylist():
+    
     box_addPlaylist.config(state="normal")
     box_addPlaylist.delete("1.0", tk.END) 
     
     for videoNumber in videoInPlayList:
         reset(videoNumber)
+    videoInPlayList.clear()
 
 def backToVideoPlayer():
     window.destroy()
     call(["python", "video_player.py"])
 
+def on_ent_filePath_click(event):
+    if ent_filePath.get() == "Enter filepath":
+        ent_filePath.delete(0, tk.END)
+        ent_filePath.config(fg='black')
+
+def on_focusout(event):
+    if ent_filePath.get() == '':
+        ent_filePath.insert(0, "Enter filepath")
+        ent_filePath.config(fg='grey')
+        
+def export():
+    filepath = ent_filePath.get()
+    if filepath.strip() == "Enter filepath":
+        messagebox.showerror("Error", "Please enter a filepath")
+    else:
+        exportPlayList(filepath, videoInPlayList)
+        lbl_export.config(text="Exported successfully")
+        
+
+   
+        
 btn_back = tk.Button(window, text='Back', font="arial 14", command=backToVideoPlayer)
 btn_back.grid(row=0, column=0,pady=10,padx=(5,0))
 
@@ -86,16 +110,27 @@ btn_addToPLaylist.grid(row=0, column=4,pady=10,padx=(10,10))
 btn_resetPlaylist = tk.Button(window, text="Reset", font="arial 14", command=resetPLaylist)
 btn_resetPlaylist.grid(row=0, column=5,pady=10)
 
-videoBox = tk.Text(window, height=18, width=60, state="disabled")
-videoBox.grid(row=1, column=0, columnspan=4, rowspan=3,padx=(5,0))
+videoBox = tk.Text(window, height=23, width=60, state="disabled")
+videoBox.grid(row=1, column=0, columnspan=4, rowspan=5,padx=(5,0))
 
 box_addPlaylist = tk.Text(window, height=14, width=28,wrap=tk.WORD)
 box_addPlaylist.grid(row=1, column=4,columnspan=2, rowspan=2,padx=(10,0), pady=(0,10))
 
 btn_playPLaylist = tk.Button(window, text="Play Number", font="arial 14",width=12,command=playTheList)
-btn_playPLaylist.grid(row=3, column=4,columnspan=2,padx=(10,0))
+btn_playPLaylist.grid(row=3, column=4,columnspan=2,padx=(10,0),sticky="we")
+
+btn_exportPlayList = tk.Button(window, text="Export PlayList", font="arial 14",command=export)
+btn_exportPlayList.grid(row=4, column=4,columnspan=2,padx=(10,0),sticky="we")
+
+ent_filePath = tk.Entry(window,fg="grey")
+ent_filePath.grid(row=5, column=4,columnspan=2,padx=(10,0),sticky="we")
+ent_filePath.insert(0, "Enter filepath")
+ent_filePath.bind('<FocusIn>', on_ent_filePath_click)
+ent_filePath.bind('<FocusOut>', on_focusout)
 
 lbl_listAllVideo = tk.Label(window, text="", font="arial 14")
-lbl_listAllVideo.grid(row=4, column=0,columnspan=2,sticky="w")
+lbl_listAllVideo.grid(row=6, column=0,columnspan=2,sticky="w")
 
+lbl_export = tk.Label(window, text="", font="arial 14")
+lbl_export.grid(row=6,column=4,columnspan=2,padx=(10,0),sticky="w")
 window.mainloop()
