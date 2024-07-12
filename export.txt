@@ -1,0 +1,6 @@
+Tom and Jerry,Fred Quimby,4.0
+The Lion King,Roger Allers,8.0
+Avatar,James Cameron,7.5
+Inception,Christopher Nolan,9.0
+Frozen,Chris Buck,7.0
+Pulp Fiction,Quentin Tarantino,8.5

@@ -1,7 +1,7 @@
 def Setup(window, title, width, height):
     window_width = width  # Set the window width
     window_height = height  # Set the window height
-    # window.resizable(False, False)  # Make the window non-resizable
+    window.resizable(False, False)  # Make the window non-resizable
 
     screen_width = window.winfo_screenwidth()  # Get the screen width
     screen_height = window.winfo_screenheight()  # Get the screen height

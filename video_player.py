@@ -34,6 +34,6 @@ btn_update = tk.Button(window, text="Update Videos", font=("Arial", 14), command
 btn_update.grid(row=1, column=2, padx=5, pady=5)
 
 btn_filter = tk.Button(window, text="Filter Videos By Director's Name",width=35, font=("Arial", 14), command=filterVideos, borderwidth=3)
-btn_filter.grid(row=2, column=0, columnspan=3, padx=5, pady=5, sticky="")
+btn_filter.grid(row=2, column=0, columnspan=3, padx=5, pady=5)
 
 window.mainloop()

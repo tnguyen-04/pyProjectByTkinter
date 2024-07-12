@@ -1,5 +1,5 @@
 import csv
-
+import os
 class Video:
     def __init__(self, number, title, director, rating,plays):
         self.number = number
@@ -12,7 +12,7 @@ video_list = []
 
 with open('videoStorage.csv', 'r', encoding='utf-8') as file:
     reader = csv.reader(file)
-    next(reader)  # Bỏ qua dòng tiêu đề
+    next(reader) 
     for row in reader:
         if len(row)>=5:
             video_list.append(Video(int(row[0]), row[1], row[2],float(row[3]), int(row[4])))
@@ -154,3 +154,19 @@ def getVideoOfTheDirector(directorName):
             if row[2] == directorName:
                 directorVideos.append(Video(int(row[0]), row[1], row[2],float(row[3]), int(row[4])))
         return directorVideos
+    
+def exportPlayList(filepath, videoInPlayList):
+    if not os.path.exists(filepath):
+        with open(filepath, mode='w', encoding='utf-8') as txt_file:
+            pass 
+    playListRows = []
+    for videoNumber in videoInPlayList:
+        getTitle = get_name(videoNumber)
+        getDirector = get_director(videoNumber)
+        getRating = get_rating(videoNumber)
+        playListRows.append([getTitle,getDirector, str(getRating)])
+    
+    with open(filepath, mode='a', encoding='utf-8') as txt_file:  
+        for row in playListRows:
+            txt_file.write(','.join(row) + "\n")
+   
