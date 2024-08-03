@@ -27,6 +27,7 @@ def updateNewRating():
     input_number =ent_enterNumber.get().strip()
     new_Rating = ent_enterRating.get().strip()
     box_updateVideos.config(state="normal")
+    box_updateVideos.delete("1.0", tk.END)
     
     if input_number.isdigit() and int(input_number) > 0 and new_Rating.isdigit() and float(new_Rating)>0 and float(new_Rating)<10:
         number = int(input_number)
