@@ -1,8 +1,5 @@
-# Bỏ qua thư mục _pycache_
+.venv/
+.pytest_cache/
+.idea/
 __pycache__/
 
-# Bỏ qua thư mục .pytest_cache
-.pytest_cache/
-
-# Bỏ qua thư mục .idea
-.idea/
