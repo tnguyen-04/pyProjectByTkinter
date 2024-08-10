@@ -1,3 +1,8 @@
-.pytest_cache
-pytest_cache
-idea
+# Bỏ qua thư mục _pycache_
+__pycache__/
+
+# Bỏ qua thư mục .pytest_cache
+.pytest_cache/
+
+# Bỏ qua thư mục .idea
+.idea/
